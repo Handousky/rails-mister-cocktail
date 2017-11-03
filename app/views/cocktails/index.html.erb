@@ -8,6 +8,7 @@
   <div class="row">
     <% @cocktails.each do |cocktail| %>
       <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+      <p><%= cl_image_tag cocktail.photo.url(:thumbnail) %></p>
     <% end %>
   </div>
 </div>

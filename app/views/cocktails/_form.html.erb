@@ -1,6 +1,8 @@
 <%= simple_form_for(@cocktail) do |f| %>
   <%= f.error_notification %>
   <%= f.input :name, label: "Nom du cocktail", placeholder: "Ex: Mojito" %>
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
   <%= f.submit "Ajouter le cocktail", class: "btn btn-primary" %>
 <% end %>
 

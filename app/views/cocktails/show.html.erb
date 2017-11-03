@@ -11,6 +11,8 @@
         <% end %>
       </ul>
 
+      <%= cl_image_tag @cocktail.photo.url(:large) %>
+
       <h2 class="text-center">Add a Dose</h2>
 
       <% if @dose.errors.any? %>
